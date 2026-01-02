@@ -12,7 +12,6 @@ import {
     Text,
     TextInput,
     Title,
-    useMantineTheme,
 } from "@mantine/core";
 import { IconPlus, IconSettings, IconTrash } from "@tabler/icons-react";
 import { useState } from "react";
@@ -20,7 +19,6 @@ import wordsData from "../../data/words.json";
 import { useGameStore } from "../../store/useGameStore";
 
 export const PlayerSetup = () => {
-    const theme = useMantineTheme();
     const { players, addPlayer, removePlayer, settings, updateSettings, startGame, goHome } = useGameStore();
     const [nameInput, setNameInput] = useState("");
 
